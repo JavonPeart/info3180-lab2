@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="upper-section">
+        <img class="profile-img" src="{{ url_for('static', filename='hercules.jpg')}}" alt="Profile Photo">
+
+        <h2>Javon Peart</h2>
+        <div>
+            <div>@_ja.von._</div>
+            <div>Spanish Town, St. Catherine</div>
+            <div>{{ date_joined }}</div>
+        </div>
+        
+    </div>
+
+    <div class="lower-section">
+        <p class="bio">If you're one for first impressions then you should come back tomorrow. Kidding! 
+            My name is Javon and I work with all kinds of technology. 
+            Robotics is my favourite hobby but I plan to become a Cyber Security Analyst!</p>
+    
+        <div class="nums">
+            <div class="col">4</div>
+            <div class="col">204</div>
+            <div class="col">369</div>
+        </div>
+        <div class="prof">
+            <div class="col">Posts</div>
+            <div class="col">Following</div>
+            <div class="col">Followers</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+
+    </div>
+
+</div>
+{% endblock %}
